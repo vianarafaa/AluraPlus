@@ -197,13 +197,12 @@ body {
     }
 
     .secundario__imagem {
-        width: 50vw;
+        width: 70vw;
         margin-bottom: 3em;
     }
 
     .telas {
         padding-left: 0;
-        width: 60%;
     }
 
     .dispositivos__lista {
