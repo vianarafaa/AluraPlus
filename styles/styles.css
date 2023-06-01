@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+:root {
+    --cor-de-fundo: #00030C;
+    --cor-primaria: #FFFFFF;
+    --cor-secundaria: #167BF7;
+    --cor-terciaria: #EC2F46;
+    --cor-quartenaria: #C0C0C0;
+    --cor-botao-efeito: #3f91f5;
+
+    --fonte-primaria: 'Inter', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    color: var(--cor-primaria);
+}
+
+.apresentacao {
+    background-image: url("/assets/background.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-items: center;
+    text-align: center;
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.apresentacao__caixa {
+    margin: 0 3.375em;
+}
+
+.apresentacao__titulo {
+    font-family: var(--fonte-primaria);
+    font-size: 1.75rem;
+    font-weight: 700;
+}
+
+.apresentacao__imagem {
+    margin: 1.375em 0em 2.375em 0em;
+}
+
+.apresentacao__conteudo {
+    font-family: var(--fonte-primaria);
+    font-weight: 700;
+    font-size: 1.75rem;
+    color: var(--cor-primaria);
+}
+
+.apresentacao__links {
+    font-family: var(--fonte-primaria);
+    font-size: 1rem;
+    text-decoration: none;
+    color: var(--cor-primaria);
+    background-color: var(--cor-secundaria);
+    border-radius: 8px;
+    padding: 1em;
+    display: block;
+    text-align: center;
+    margin: 1em 0;
+}
+
+.apresentacao__links:hover {
+    background-color: var(--cor-botao-efeito);
+}
+
+.link__secundario {
+    background-color: transparent;
+    border: 1px solid var(--cor-primaria);
+    margin-bottom: 0.625em;
+}
+
+.link__secundario:hover {
+    background-color: rgba(192, 192, 192, 0.3);
+}
+
+.apresentacao__aviso {
+    color: var(--cor-quartenaria);
+    font-size: 0.75rem;
+    font-family: var(--fonte-primaria);
+    font-weight: 400;
+}
+
+.secundario {
+    align-items: center;
+    margin: 0 10em;
+}
+
+.secundario__imagem {
+    width: 80%;
+}
+
+.descricao__titulo {
+    color: var(--cor-primaria);
+    font-size: 3rem;
+    font-family: var(--fonte-primaria);
+    font-weight: 700;
+    margin-bottom: 0.1em;
+}
+
+.descricao__texto {
+    color: var(--cor-quartenaria);
+    font-size: 1rem;
+    font-family: var(--fonte-primaria);
+    font-weight: 400;
+}
+
+.link__terciario {
+    display: inline-block;
+}
+
+.telas {
+    padding-left: 3em;
+}
+
+.dispositivos {
+    text-align: center;
+    margin: 5em 0;
+}
+
+.dispositivos__titulo {
+    font-family: var(--fonte-primaria);
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--cor-primaria);
+}
+
+.dispositivos__lista {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 5em 0 10em 0;
+}
+
+.dispositivos__lista__itens {
+    font-family: var(--fonte-primaria);
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--cor-primaria);
+}
+
+.rodape {
+    text-align: center;
+    margin: 2.5em 3em;
+}
+
+.rodape__lista {
+    display: flex;
+    list-style-type: none;
+    gap: 1em;
+    margin: 2.5em 0 1.5em 0;
+    justify-content: center;
+}
+
+.rodape__lista__link a{
+    font-family: var(--fonte-primaria);
+    text-decoration: none;
+    color: var(--cor-primaria);
+    font-weight: 400;
+}
+
+.rodape__texto {
+    font-family: var(--fonte-primaria);
+    color: var(--cor-quartenaria);
+    font-size: 0.875rem;
+    font-weight: 400;
+    margin: 1.5em 0 0 0;
+}
+
+@media screen and (max-width: 1020px) {
+    .container {
+        display: block;
+        background-image: none;
+    }
+
+    .apresentacao__imagem {
+        width: 50vw;
+    }
+
+    .apresentacao__caixa {
+        margin: 2em 2em;
+    }
+
+    .secundario {
+        margin: 2em 1em;
+        text-align: center;
+    }
+
+    .secundario__imagem {
+        width: 50vw;
+        margin-bottom: 3em;
+    }
+
+    .telas {
+        padding-left: 0;
+        width: 60%;
+    }
+
+    .dispositivos__lista {
+        display: block;
+    }
+
+    .rodape__lista {
+        display: block;
+    }
+}
